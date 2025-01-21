@@ -31,14 +31,14 @@ function actualizarListaAmigos() {
     // Se crea for para crear la lista nuevamente con los campos.
     for (let i = 0; i < amigos.length; i++) {
         let li = document.createElement('li');    // Crea un nuevo <li>.
-        li.textContent = amigos[i];               // Asigna el nombre del amigo al <li>
-        listaAmigos.appendChild(li);              // Agrega el <li> a la lista
+        li.textContent = amigos[i];               // Asigna el nombre del amigo al <li>.
+        listaAmigos.appendChild(li);              // Agrega el <li> a la lista.
     }
 }
 
 //Funcion para sortear amigo.
 function sortearAmigo() {
-    //Validar que tengamos amigos para sortear
+    //Validar que tengamos amigos para sortear.
     if (amigos.length === 0) {
         alert('No hay amigos para sortear');
         return;
