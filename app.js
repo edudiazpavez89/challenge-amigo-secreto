@@ -29,11 +29,11 @@ function actualizarListaAmigos() {
     let listaAmigos = document.getElementById('listaAmigos');
     listaAmigos.innerHTML = '';  // Limpiar la lista antes de actualizar en caso de agregar o retirar de la lista.
     // Se crea for para crear la lista nuevamente con los campos.
-    amigos.forEach(amigo => {
-        let li = document.createElement('li');
-        li.textContent = amigo;
-        listaAmigos.appendChild(li);
-    });
+    for (let i = 0; i < amigos.length; i++) {
+        let li = document.createElement('li');    // Crea un nuevo <li>.
+        li.textContent = amigos[i];               // Asigna el nombre del amigo al <li>
+        listaAmigos.appendChild(li);              // Agrega el <li> a la lista
+    }
 }
 
 //Funcion para sortear amigo.
